@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white; 
+}
+
+/* Estilos Generales */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: none;
+}
+
+nav a {
+    color: black;
+    display: block;
+    text-decoration: none;
+}
+
+/* Estilos para el Netvar */
+.navbar {
+    background-color: #eac926; 
+    color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 30vw;
+    margin-left: 10px;
+}
+
+.logo img {
+    max-width: 50vw;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 15px 13px 13px 13px;
+    border: none;
+    background-color: #ebebeb;
+}
+
+.search-bar button {
+    background-color: #ebebeb; 
+    color: #03264C; 
+    border: none;
+    padding: 13px;
+    cursor: pointer;
+}
+
+.cta {
+    color: #03264C; 
+    width: 100vw;
+    text-align: center;
+    margin-top: 20px;
+}
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 20px;
+
+}
+.nav-menu i{
+    padding: 10px;
+    background-color: rgb(49, 86, 235) ;
+    color: white;
+    border-radius: 5px;
+}
+#menu-icon{
+    color: white;
+}
+.login-bar a {
+    text-decoration: none;
+    color: #03264C; ;
+    margin: 0 10px;
+    display:none;
+}
+
+
+/* Estilos para el banner */
+.banner {
+    text-align: center;
+}
+
+.home-banner {
+    max-width: 100%; 
+    height: auto;    
+}
+
+/* Estilos para main */
+.main {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.main-article {
+    width: calc(100% - 10px);
+    margin-bottom: 10px;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+.product-image {
+    max-width: 100px; 
+    margin-right: 10px; 
+}
+
+.main-article img {
+    max-width: 100%;
+}
+.product-info {
+    display: flex;
+    flex-direction: column; /* Apila el precio y el descuento verticalmente */
+
+    /* Establece el ancho del precio y el descuento */
+    width: 30%; /* El precio ocupa el 30% del renglón */
+}
+.price {
+    font-size: 18px;
+}
+
+.discount {
+    font-size: 16px;
+    color: #eac926; 
+}
+
+.description {
+    font-size: 16px;
+}
+
+
+.product-container {
+    display: flex;
+}
+.main-article .description {
+    display: none;
+}
+
+/* Estilos para la versión tablet (dos artículos por fila) */
+@media (min-width: 768px) {
+    .product-container {
+        flex-direction: row;
+    }
+    .main-article {
+        width: 50%; /* Dos artículos por fila */
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-article {
+        width: 25%; /* Cuatro artículos en una fila para desktop */
+    }
+}
+
+i.fas.fa-bars{
+    color:black;
+    font-size: 32px;
+}
