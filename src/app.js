@@ -1,13 +1,14 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const port = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001;
 
 app.use(express.static(path.join(__dirname, '../public')));
 
-app.get('/', (req, res) =>{
+app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/home.html');
 });
 
-app.listen (port, () => console.log(`Servidor funcionando bien en puerto ${port}`));
-
+app.listen(PORT, () => {
+    console.log(`El servidor está escuchando en el puerto ${PORT}`);
+});

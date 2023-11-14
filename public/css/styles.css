@@ -2,9 +2,10 @@
     box-sizing: border-box;
     margin: 0px;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: white; 
+    background-color: #ebebeb;
 }
 
 /* Estilos Generales */
@@ -22,7 +23,7 @@ nav a {
 
 /* Estilos para el Netvar */
 .navbar {
-    background-color: #eac926; 
+    background-color: #eac926;
     color: #ebebeb;
     display: flex;
     flex-wrap: wrap;
@@ -32,64 +33,111 @@ nav a {
 }
 
 .logo {
-    width: 30vw;
-    margin-left: 10px;
+    width: 40%;
 }
 
 .logo img {
-    max-width: 50vw;
+    max-width: 90%;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+
+
 }
 
 .search-bar {
+    position: relative;
     display: flex;
     align-items: center;
-    width: 50vw;
+    width: 100%;
 }
 
 .search-bar input {
-    width: 80%;
-    padding: 15px 13px 13px 13px;
-    border: none;
-    background-color: #ebebeb;
+    position: relative;
+    z-index: 915;
+    color: #333;
+    font-size: 16px;
+    margin: 0;
+    font-family: inherit;
+    border-radius: 2px;
+    background-color: #fff;
+    display: flex;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+    height: 40px;
+    width: 100%;
+    padding: 10px 60px 10px 15px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+    border-width: 1.5px;
 }
 
 .search-bar button {
-    background-color: #ebebeb; 
-    color: #03264C; 
+    position: absolute;
+    z-index: 920;
+    padding: 0;
+    background: none;
     border: none;
-    padding: 13px;
+    font-size: 22px;
+    color: #666;
+    line-height: 1em;
+    border-radius: 0 2px 2px 0;
+    width: 46px;
+    right: 0;
+    left: auto;
+    background-image: none;
+    height: 40px;
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
 }
 
 .cta {
-    color: #03264C; 
-    width: 100vw;
+    color: #03264C;
     text-align: center;
-    margin-top: 20px;
-}
-.nav-menu{
+    margin-top: 15px;
     display: flex;
-    justify-content: center;
-    width: 100vw;
-    margin-top: 20px;
-
+    align-items: center;
 }
-.nav-menu i{
+
+.cta svg {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.cta p {
+    display: inline-block;
+}
+
+.burger-menu {
+    justify-content: center;
+    display: flex;
+    width: 100vw;
+    margin-top: 15px;
+}
+
+.burger-menu i {
+    background-color: #096bd3;
     padding: 10px;
-    background-color: rgb(49, 86, 235) ;
-    color: white;
     border-radius: 5px;
 }
-#menu-icon{
+
+#menu-icon {
     color: white;
 }
+
 .login-bar a {
     text-decoration: none;
-    color: #03264C; ;
+    color: #03264C;
     margin: 0 10px;
-    display:none;
+    display: none;
 }
 
+.login-bar svg {
+    display: none;
+}
 
 /* Estilos para el banner */
 .banner {
@@ -97,8 +145,8 @@ nav a {
 }
 
 .home-banner {
-    max-width: 100%; 
-    height: auto;    
+    width: 100%;
+    height: auto;
 }
 
 /* Estilos para main */
@@ -110,68 +158,195 @@ nav a {
     justify-content: space-between;
     padding: 15px 0;
 }
+
+.main h1 {
+    font-size: 24px;
+    display: flex;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .main-article {
     width: calc(100% - 10px);
     margin-bottom: 10px;
+    margin: 5px;
     border-top: 1px solid #ebebeb;
     padding: 15px;
     background-color: #fff;
     display: flex;
     align-items: center;
 }
+.product{
+    position: relative;
+}
+
 .product-image {
-    max-width: 100px; 
-    margin-right: 10px; 
+    max-width: 100px;
+    margin-right: 10px;
 }
 
 .main-article img {
     max-width: 100%;
 }
+
 .product-info {
     display: flex;
-    flex-direction: column; /* Apila el precio y el descuento verticalmente */
-
-    /* Establece el ancho del precio y el descuento */
-    width: 30%; /* El precio ocupa el 30% del renglón */
+    border-top: 1px solid #ebebeb;
+    padding-top: 10px;
+    position: relative;
 }
+
+.product-info .truck {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
 .price {
     font-size: 18px;
+    width: 30%;
 }
 
 .discount {
     font-size: 16px;
-    color: #eac926; 
+    color: #39b54a;
+    width: 70%;
 }
 
 .description {
     font-size: 16px;
+    margin-top: 10px;
 }
 
 
-.product-container {
-    display: flex;
-}
+
 .main-article .description {
-    display: none;
+    color: #666;
+    white-space: nowrap;
+}
+
+.footer-main {
+    text-align: center;
+}
+
+b {
+    font-weight: bold;
+}
+
+p {
+    margin: 10px; 
+}
+
+.copyright {
+    text-align: left;
+}
+
+.blue-icon {
+    font-size: 24px;
+    color: blue;
 }
 
 /* Estilos para la versión tablet (dos artículos por fila) */
 @media (min-width: 768px) {
-    .product-container {
-        flex-direction: row;
-    }
     .main-article {
-        width: 50%; /* Dos artículos por fila */
+        width: calc(50% - 10px);
     }
+
+    .logo {
+        width: 33%;
+    }
+
+    .search-container {
+        width: 33%;
+    }
+
+    .search-bar button {
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        margin-left: 2px;
+    }
+
+
+    .cta {
+        width: 33%;
+    }
+
+    .burger-menu {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .burger-menu i {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    .header .burger-menu ul li {
+        float: left;
+        position: absolute;
+    }
+
+    /* Estilos especificos Menu*/
+    .navbar .burger-menu ul li a {
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+        transition: all .2s ease;
+    }
+
+    .navbar .burger-menu ul li ul li {
+        width: 50%;
+    }
+
+    .navbar .burger-menu ul li:hover>ul {
+        display: initial;
+    }
+
+    .login-bar {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    .login-bar a {
+        text-decoration: none;
+        color: #03264C;
+        display: block;
+
+    }
+
+    .login-bar svg {
+        display: block;
+    }
+
 }
 
 @media (min-width: 1024px) {
     .main-article {
-        width: 25%; /* Cuatro artículos en una fila para desktop */
+        width: calc(25% - 10px);
     }
 }
 
-i.fas.fa-bars{
-    color:black;
-    font-size: 32px;
+i.fas.fa-bars {
+    font-size: 30px;
 }
