@@ -1,0 +1,72 @@
+main form {
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+    padding: 15px;
+    background-color:  #ebebeb;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form select {
+    height: 40px;
+}
+
+form input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+form input[type="file"] {
+    margin-top: 6px;
+}
+
+/* Estilo para los botones */
+form input[type="submit"],
+form input[type="reset"] {
+    background-color:#0a57a9;;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+    background-color:#0022AA ;
+}
+
+
+form label[for="electro"],
+form label[for="moda"],
+form label[for="hogar"],
+form label[for="jugueteria"],
+form label[for="vida_sana"] {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+form input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin-bottom: 0;
+}

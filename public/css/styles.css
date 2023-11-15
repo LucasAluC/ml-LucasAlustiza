@@ -44,8 +44,6 @@ nav a {
     display: flex;
     align-items: center;
     width: 50%;
-
-
 }
 
 .search-bar {
@@ -76,7 +74,7 @@ nav a {
 
 .search-bar button {
     position: absolute;
-    z-index: 920;
+    z-index: 100;
     padding: 0;
     background: none;
     border: none;
@@ -104,7 +102,8 @@ nav a {
 
 .cta svg {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 8px;
+    margin-left: 30px;
 }
 
 .cta p {
@@ -139,112 +138,12 @@ nav a {
     display: none;
 }
 
-/* Estilos para el banner */
-.banner {
-    text-align: center;
-}
-
-.home-banner {
-    width: 100%;
-    height: auto;
-}
-
-/* Estilos para main */
-.main {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 15px 0;
-}
-
-.main h1 {
-    font-size: 24px;
-    display: flex;
-    margin-bottom: 5px;
-    margin-top: 5px;
-
-}
-
-.product-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.main-article {
-    width: calc(100% - 10px);
-    margin-bottom: 10px;
-    margin: 5px;
-    border-top: 1px solid #ebebeb;
-    padding: 15px;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-}
-.product{
-    position: relative;
-}
-
-.product-image {
-    max-width: 100px;
-    margin-right: 10px;
-}
-
-.main-article img {
-    max-width: 100%;
-}
-
-.product-info {
-    display: flex;
-    border-top: 1px solid #ebebeb;
-    padding-top: 10px;
-    position: relative;
-}
-
-.product-info .truck {
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-}
-
-.price {
-    font-size: 18px;
-    width: 30%;
-}
-
-.discount {
-    font-size: 16px;
-    color: #39b54a;
-    width: 70%;
-}
-
-.description {
-    font-size: 16px;
-    margin-top: 10px;
-}
-
-
-
-.main-article .description {
-    color: #666;
-    white-space: nowrap;
-}
-
-.footer-main {
+.footer-box {
     text-align: center;
 }
 
 b {
-    font-weight: bold;
+    font-weight: bold; 
 }
 
 p {
@@ -262,9 +161,7 @@ p {
 
 /* Estilos para la versión tablet (dos artículos por fila) */
 @media (min-width: 768px) {
-    .main-article {
-        width: calc(50% - 10px);
-    }
+
 
     .logo {
         width: 33%;
@@ -341,11 +238,6 @@ p {
 
 }
 
-@media (min-width: 1024px) {
-    .main-article {
-        width: calc(25% - 10px);
-    }
-}
 
 i.fas.fa-bars {
     font-size: 30px;
